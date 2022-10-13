@@ -51,7 +51,6 @@ plugins:
 - id: font-awesome-api
 - id: git
 - id: git-client
-- id: git-server
 - id: github
 - id: github-api
 - id: github-branch-source
@@ -75,7 +74,6 @@ plugins:
 - id: kubernetes
 - id: kubernetes-client-api
 - id: kubernetes-credentials
-- id: kubernetes-credentials-provider
 - id: ldap
 - id: mailer
 - id: mapdb-api
@@ -128,7 +126,6 @@ plugins:
 - id: workflow-basic-steps
 - id: workflow-cps
 - id: workflow-cps-checkpoint
-- id: workflow-cps-global-lib
 - id: workflow-durable-task-step
 - id: workflow-job
 - id: workflow-multibranch

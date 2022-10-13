@@ -25,6 +25,11 @@ Usage: run.sh -v <CI_VERSION> [-f <path/to/plugins.yaml>] [-h] [-x]
 
 ## Example
 ```
+#First add your wanted plugin id to the plugins.yaml
+#Here for examle the kubernetes-credentials-provider
+echo "- id: kubernetes-credentials-provider" >> casc-sample-bundle/plugins.yaml
+#then call tghe run script wich calculates dependencies and tweaks the plugin-catalog.yaml if required
+#Plugin dependencies will calculated automaticly 
 ./run.sh -v  2.319.3.4 -d casc-sample-bundle
 ```
 `plugin.yaml` contains all plugin id`s that should be installed
