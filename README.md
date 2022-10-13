@@ -1,6 +1,6 @@
 
 see 
-* https://github.com/kyounger/casc-plugin-dependency-calculation
+* Inspired by https://github.com/kyounger/casc-plugin-dependency-calculation
 * https://github.com/jenkinsci/plugin-installation-manager-tool 
 
 * Requirements
@@ -12,29 +12,27 @@ see
   * awk
   * java
     
-# Usage
-```
-Usage: run.sh -v <CI_VERSION> [-f <path/to/plugins.yaml>] [-h] [-x]
-
-    -h          display this help and exit
-    -f FILE     path to the plugins.yaml file
-    -v          The version of CloudBees CI (e.g. 2.263.4.2)
-    -x          Do NOT do an inplace update of plugins.yaml
-
-```
 
 ## Example
-```
-#First add your wanted plugin id to the plugins.yaml
-#Here for examle the kubernetes-credentials-provider
-echo "- id: kubernetes-credentials-provider" >> casc-sample-bundle/plugins.yaml
-#then call tghe run script wich calculates dependencies and tweaks the plugin-catalog.yaml if required
-#Plugin dependencies will calculated automaticly 
-./run.sh -v  2.319.3.4 -d casc-sample-bundle
-```
-`plugin.yaml` contains all plugin id`s that should be installed
 
-dependencies and tier3 plugins will be calculated automaticly 
+First add your wanted plugin id to the plugins.yaml
+Here for examle the kubernetes-credentials-provider plugin
+```
+
+echo "- id: kubernetes-credentials-provider" >> casc-sample-bundle/plugins.yaml
+```
+
+Then call the run script wich calculates dependencies and tweaks the plugin-catalog.yaml if required
+Plugin dependencies will calculated automaticly
+```
+./run.sh -v  2.319.3.4 -d casc-sample-bundle
+./run.sh -v  2.361.2.1 -d casc-sample-bundle
+```
+
+Result: make a git diff to see what haven been c haged in the casc-sample-bundle/plugin*.yaml files 
+
+* `plugin.yaml` contains all plugin id`s that should be installed
+* `plugin-catalog.yaml` dependencies and tier3 plugins will be calculated  
 
 
 
