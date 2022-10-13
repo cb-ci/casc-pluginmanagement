@@ -1,0 +1,31 @@
+type: plugin-catalog
+version: '1'
+name: plugin-casc-catalog
+displayName: tier3/Jenkins OSS plugins CloudBees CI 2.319.3.4
+configurations:
+- description: these are tier3 plugins for CloudBees CI 2.319.3.4 (Jenkins OSS, not supoorted by CloudBees. see https://docs.cloudbees.com/docs/cloudbees-common/latest/plugin-support-policies)
+  includePlugins:
+    bouncycastle-api:
+      version: 2.26
+    instance-identity:
+      version: 116.vf8f487400980
+    jakarta-activation-api:
+      version: 2.0.0-2
+    jakarta-mail-api:
+      version: 2.0.0-5
+    javax-activation-api:
+      version: 1.2.0-3
+    javax-mail-api:
+      version: 1.6.2-6
+    kubernetes-credentials-provider:
+      version: 0.20
+    mina-sshd-api-common:
+      version: 2.9.1-44.v476733c11f82
+    mina-sshd-api-core:
+      version: 2.8.0-21.v493b_6b_db_22c6
+    mina-sshd-api-scp:
+      version: 2.8.0-21.v493b_6b_db_22c6
+    mina-sshd-api-sftp:
+      version: 2.8.0-21.v493b_6b_db_22c6
+    pipeline-groovy-lib:
+      version: 593.va_a_fc25d520e9

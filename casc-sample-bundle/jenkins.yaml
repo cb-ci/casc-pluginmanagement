@@ -1,0 +1,340 @@
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - string:
+              description: "githubaccesstoken"
+              id: "githubaccesstoken"
+              scope: GLOBAL
+              secret: "{AQAAABAAAABwTEkcLRrqSH5A6haFmhvb9Zt087ndbT7u1HbyKDCfV110KNyXRulJ7Dc6JzymyQzbUqRcYymmuzP+6CtP914r5ziCK+o+H4D+82Ibf8dEV8tgwrsdscH4XERyjHUSVW1N6WqBfEdrcORQQzOv1ul7ynqmCnRDRA0xdkhVKo76nmg=}"
+jenkins:
+  agentProtocols:
+    - "Diagnostic-Ping"
+    - "JNLP4-connect"
+    - "OperationsCenter2"
+    - "Ping"
+  authorizationStrategy: "cloudBeesRoleBasedAccessControl"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: true
+  disableRememberMe: false
+  labelAtoms:
+    - name: "built-in"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  noUsageStatistics: true
+  numExecutors: 2
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm: "operationsCenter"
+  slaveAgentPort: 0
+  systemMessage: "CasC bundle casc-sample-bundle version 18"
+  updateCenter:
+    sites:
+      - id: "virtual-cap-core-cm"
+        url: "https://jenkins-updates.cloudbees.com/update-center/envelope-core-cm/update-center.json"
+  views:
+    - all:
+        name: "all"
+  viewsTabBar: "standard"
+advisor:
+  acceptToS: true
+  email: "acaternberg@cloudbees.com"
+  excludedComponents:
+    - "AgentsSystemConfiguration"
+    - "AgentsJVMProcessSystemMetricsContents"
+    - "GCLogs"
+    - "AgentsConfigFile"
+    - "ConfigFileComponent"
+    - "RootCAs"
+    - "SlaveLogs"
+    - "OtherConfigFilesComponent"
+    - "HeapUsageHistogram"
+    - "OtherLogs"
+    - "SlaveLaunchLogs"
+  nagDisabled: true
+beekeeper:
+  enabled: true
+  securityWarnings:
+    enabledForCore: true
+    enabledForPlugins: true
+  upgrades:
+    autoDowngradePlugins: false
+    autoUpgradePlugins: false
+license:
+  certificate: |
+    -----BEGIN CERTIFICATE-----
+    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
+    QBPBnWuhQJ+vemChTqRMMEoxCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhEZWxhd2Fy
+    ZTEOMAwGA1UEBwwFTGV3ZXMxGDAWBgNVBAoMD0Nsb3VkQmVlcywgSW5jLoIEAUtF
+    kjCCCRcGCisGAQQBgql/AQcEggkHBIIJAwotLS0tLUJFR0lOIENFUlRJRklDQVRF
+    LS0tLS0KTUlJR2VqQ0NCR0tnQXdJQkFnSUVBVXRGa2pBTkJna3Foa2lHOXcwQkFR
+    VUZBREJLTVFzd0NRWURWUVFHRXdKVgpVekVSTUE4R0ExVUVDQXdJUkdWc1lYZGhj
+    bVV4RGpBTUJnTlZCQWNNQlV4bGQyVnpNUmd3RmdZRFZRUUtEQTlECmJHOTFaRUps
+    WlhNc0lFbHVZeTR3SGhjTk1qSXdNekUwTURBd01EQXdXaGNOTWpJd016TXhNak0x
+    T1RVNVdqQ0MKQW5ZeEVUQVBCZ29yQmdFRUFZS3Bmd0VCRXdFek1UQXdMZ1lLS3dZ
+    QkJBR0NxWDhCQWhNZ1pERmtabUZpTm1VNApPRFkyTWpnM1l6VXpNelJsTURkak9E
+    azBZVEkwT1RVeEZUQVRCZ3NyQmdFRUFZS3Bmd0VMRGhNRWRISjFaVEVWCk1CTUdD
+    eXNHQVFRQmdxbC9BUXNORXdSMGNuVmxNUlV3RXdZTEt3WUJCQUdDcVg4QkN4QVRC
+    SFJ5ZFdVeEZUQVQKQmdzckJnRUVBWUtwZndFTER4TUVkSEoxWlRFVk1CTUdDeXNH
+    QVFRQmdxbC9BUXNLRXdSMGNuVmxNUlV3RXdZTApLd1lCQkFHQ3FYOEJDd3dUQkhS
+    eWRXVXhGVEFUQmdzckJnRUVBWUtwZndFTEN4TUVkSEoxWlRFVk1CTUdDeXNHCkFR
+    UUJncWwvQVFzUkV3UjBjblZsTVJVd0V3WUxLd1lCQkFHQ3FYOEJDd2NUQkhSeWRX
+    VXhGVEFUQmdzckJnRUUKQVlLcGZ3RUxCaE1FZEhKMVpURVZNQk1HQ3lzR0FRUUJn
+    cWwvQVFzSkV3UjBjblZsTVJVd0V3WUxLd1lCQkFHQwpxWDhCQ3dnVEJIUnlkV1V4
+    RlRBVEJnc3JCZ0VFQVlLcGZ3RUxBeE1FZEhKMVpURVZNQk1HQ3lzR0FRUUJncWwv
+    CkFRc0NFd1IwY25WbE1SVXdFd1lMS3dZQkJBR0NxWDhCQ3dVVEJIUnlkV1V4RlRB
+    VEJnc3JCZ0VFQVlLcGZ3RUwKQkJNRWRISjFaVEVWTUJNR0N5c0dBUVFCZ3FsL0FR
+    c0JFd1IwY25WbE1SVXdFd1lMS3dZQkJBR0NxWDhCQ3hRVApCSFJ5ZFdVeEZUQVRC
+    Z3NyQmdFRUFZS3Bmd0VMRlJNRWRISjFaVEVUTUJFR0Npc0dBUVFCZ3FsL0FRTVRB
+    ekV3Ck1ERVJNQThHQ2lzR0FRUUJncWwvQVE0VEFUUXhGVEFUQmdvckJnRUVBWUtw
+    ZndFSkV3Vm1ZV3h6WlRFVE1CRUcKQTFVRUF4TUtRMnh2ZFdSaVpXVnpJREVPTUF3
+    R0ExVUVDeE1GYkc5allXd3hGakFVQmdzckJnRUVBWUtwZndFTApHQk1GWm1Gc2My
+    VXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFDNG0w
+    QVh3RkZPCjFWNElpRlh0Q0llQkRheGk2WWJUcXVGbjdTMkovcjF5M0wwQ3ZPMmg2
+    dk5jRjdsR0tRVHpjYktuNkRNQkZ6L3IKNUtRaVhrcHRxQ2dzcHg1Y1o5MHlTUzdw
+    ZkRCZzhPLzBxZm9sVFAzUHBaUDlwbkVleGJFejZhMXA5RFRCbEFqZQpHU0NYWEJP
+    T1ZFU1BBcVdHMVRTL3RnNTlNeHE3THI1MzJOSlFTaXNTdTRraENaRkdEVUI0WFNY
+    SmZPVXFvc00xCmtxR1lBTm5tOW45YWFzRHJjS1JkaFRUR1JMcDM2RytMcm5tQ1E2
+    cElSeFV5WTNlYUFuRXVXNys4U09KaHR6TU0KMHZFZCsrbjlYYnlwenVjZFZ5NTFL
+    YTRzb1JxdVhReVlUZTl0c0NmMGhiWXBxSnBFSUEybkF0UUJYRWVmQ0ZYQgp4d3Vp
+    VWV6Q3RFSm5BZ01CQUFHak9qQTRNQXdHQTFVZEV3UUZNQU1CQWY4d0hRWURWUjBP
+    QkJZRUZLRjFWZGprCitWRW5nVUFUd1oxcm9VQ2ZyM3BnTUFrR0ExVWRJd1FDTUFB
+    d0RRWUpLb1pJaHZjTkFRRUZCUUFEZ2dJQkFMRVEKUjhTNXh5TVJyNE04MDNwbHRp
+    ZWl4S1BZY1hSL3lMYkV4YVpOb0RzSDcrMVZ4QzZJdU1qUnBKYStua3NyVjV6Tgp1
+    MTE3MUlXVnhjSkJMcHZHbU1CMEkwdUxUU0JLdXNNV2hpTGN4b29qMzhDL2taUzIz
+    ckZjYmhRU0N4dVl6bldVCjVURWJNUS94RzhuOTM1YjlScDdaWm41Zklvb0MwOE9K
+    UnJXb1pnNmZsczRieWpnU0t6RHYxMVpDSjNQOUt4SkMKR3FxcVFQRDRTek5WSzd1
+    NkFld2d6RHB5SEcvWVkvbDBOcVN4VjVMYUlJcHVuOXJReWdUT21HMFZTdFFWMjFm
+    SwpTeXoxenNuR2pEZ25MWllZcWw2MFh4MnZ6cVJROHVYZHZya1RWNFdlTUpxV3Zt
+    TlB1ZDcxYUE2eDhxVUhpNThpCkYrcDUzenV6TExjNW5TNEZxVkhyRStaUjkxZ0pN
+    NzNBMWR1bk9URjNNb25aWGFCSUNzV3ordFhtL0FhREdoc1MKWjNnc3lTQmFWTWtt
+    VmFaQkxlRG1BTitKTHpTQzFnRHNBVFo3NDNxdEZIejJwaHZHejNXeS9iL2g5Njk2
+    emRJbQpsY2pJaEpyRVZkeEF3Sk1LWVdQTlNTcTBUMlFsOUlFdmhQS0h6N1p5all4
+    KytZTkttY2hadkxOUEdxOE5rZE0vCjBmVVVTWE02L0UrOGovSVAxVXkvUXJEeFFZ
+    U2RxTXpoL1laWkhhVXlSTGtsc2RHMG8yYUxRV091amk3alY0YVkKK0kvSnluWnR4
+    cGp6QWt5L2VnNVdtNWw3SU0ydGdXaUQ5V1R6d0lJb29SaWcrNGVRaW1va2FvNU41
+    M3YxaEpkWgp1UllRTTE2eWQ5YlVEUVVWUW1Yc0RIWXAxZm5qVnlBdGtkUmhEK0tm
+    Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KCjANBgkqhkiG9w0BAQUFAAOCAQEA
+    kudIToHDejFaPf4hz8rwLBaNOHVhQKxYhcsBbRCIKSQDkELiF8Zs+NVvfkLYfoAM
+    Zu1XjUeN81DsD5sSr1dCm1LfgJr5JR0KZ9mcdBtBS7vByBpWbhqiigsTaJpDEPFW
+    GKnVp/nugYqbxzz1P0wHmNoCU39aN+rLGZie8Yt2jeDiRW5850Tac1YiheIDduRE
+    k/LdIB/Iap/VZPNNtK4TednZziAzg490Xt1mwSJ81cdKcXsvT1Q+0jh7Cd8mPhon
+    Q6KYloTQarBLtuiiXVtughpb95mfcEQczaRnrURmE7c6nkgs7BRw4DTvqnOJaaUY
+    vy7OQkKyK880LTrYw3hcZw==
+    -----END CERTIFICATE-----
+  key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEAj7xtR/8AQWrB5YtUEvMC8U9mnGLR2d7LSYsFruQMRzgFVtXs
+    x31YC2Zam5F+TI+sgHQuIfwyFTxLIwCXYXtfBSuSabfK6beidgqWDkw9i225MSA+
+    UMA8rUT2KewejHOBLJkT5NJNFdAUJda9GM/R/6/+WP6gYqrJ1hLEemMe+KNiX9rE
+    9Lf/97XrinsWeeEo7WSeZznsA8qQUl6tz526TXwAS/SwgwzwIkwADgNYXdnjamuB
+    JSV8kE9fmdWWSSUDDyI+C51P0Xv3m/gLS+dAqHNGYiAlbIsUY7b7IBjgTdeG6s6r
+    I2+lTMIx/dqDq51W7EPOZCRMgOX7lwgkhqH6DwIDAQABAoIBABZNfYNzXN3Jq+Zr
+    NRNvo6A/2sMfTkKJIG/741jcx87xMVrk/MWDfHrgWeTTsY49qN2RqWrakAbdgScg
+    O10D4J2TwjcnLpQPS2UXhWsYh2AwGVE3GJQ9D+0uyyd8HM1cSsnZws15mD5vOAEb
+    DeJgtMwAye2TLN3CdGkEJnp7EN4xdd0QggzmpMgsIetwtC6/n3Ir/hdCImkbZ6/l
+    NrwQfY+R1J2OkaLQ8uw5QWaDnUjrQE9+Cr7jSC8LZRMAChwih6/i1/NDbBRR5eIk
+    n7ZF0ZJmW5wSxmWWenvvJZuzwfirWGh9EK347ULpoEY7Z5Jr2RKjzo8J9KOocaay
+    saj7I1ECgYEA/6GlLy59XuCmzNuTkCboIc3NCWTNIQbnVCo/Dg8vDNeAaFa+mhRZ
+    iunXwMAjtXg6Af1hRgbgbkhZTWkRZMVePUIpMtH2KgCUk+D7fvDAMFWVhnwsuEBU
+    exLVxjun2d2S5jsUGgmR2HeGRXksT6cfWFX24bAXQAtaCnwVPfZOa/kCgYEAj/F7
+    A3mHpWy67xBQb8Geq+VgpQOgr531hFMZVvcOMWYwQQupjvVesInWw8dKQW7P9UuM
+    h0Xkz8omQI1UkRKtH9B74U6QR9VVzM7WIrN6CwGhNF66i5l/x40bRUjnZ3NU1pBs
+    xfEEnQfQBWTxhl4ts02Mj5Yn5JE2HS6tTyWkSEcCgYA3T15SSxjNQoZUpN3UvtZT
+    GhhXA/xuPPQofcuO2zIu8SHTcZFj/Ssyp04LYodXaGAEtjIp2KsOsZDA8w7UYu/1
+    CS+o000T4XREWtWPrb+ntZzYsF1ssF6XEog2kAnNVefG8Nl0mMV5tMLUnVc9FMfv
+    cQot4s/lB4+/3QErmvN04QKBgBRFMEqL+bMs/aIezQT/4iVY1uRF/4Hbn7Bzt1TM
+    073XIyJ1zvnnyd7Yelr1nJpcTYLAkdiW2iL816gtfuQzGhgp1tgipSTIgR2nXvZi
+    CeS05Qun72MrSZhDYby/CH9D+YWBrx+s0jZ+3Cd2UKDYcF0YpZuuzI1eeZ1gbl1/
+    8oOPAoGBANTDBydLCKh4SBby2T1UFhqNYSBb7fCkrfUj0yFmT+nSZK0yWEFzlvrm
+    fOmwPwvjqfF3KqC2UApt1ZKcBvfgHAzHjNI+Pb5uaJ7hwcGmRFb3Prqw4LsKuFRu
+    uloGLy0QI+8eSrpkl/O86Mtthn8VkpsvyLywMZ+sz0pdYrnIHWn5
+    -----END RSA PRIVATE KEY-----
+support:
+  automatedBundleConfiguration:
+    componentIds:
+      - "CloudBeesAssuranceSupport"
+      - "CloudBeesCasCBundlesSupport"
+      - "AgentsConfigFile"
+      - "ConfigFileComponent"
+      - "OtherConfigFilesComponent"
+      - "AboutBrowser"
+      - "AboutJenkins"
+      - "AboutUser"
+      - "AdministrativeMonitors"
+      - "AgentProtocols"
+      - "BuildQueue"
+      - "CustomLogs"
+      - "DumpExportTable"
+      - "EnvironmentVariables"
+      - "FileDescriptorLimit"
+      - "GCLogs"
+      - "HeapUsageHistogram"
+      - "ItemsContent"
+      - "AgentsJVMProcessSystemMetricsContents"
+      - "MasterJVMProcessSystemMetricsContents"
+      - "JenkinsLogs"
+      - "LoadStats"
+      - "LoggerManager"
+      - "Metrics"
+      - "NetworkInterfaces"
+      - "NodeMonitors"
+      - "OtherLogs"
+      - "ReverseProxy"
+      - "RootCAs"
+      - "RunningBuilds"
+      - "SlaveCommandStatistics"
+      - "SlaveLaunchLogs"
+      - "SlaveLogs"
+      - "AgentsSystemConfiguration"
+      - "MasterSystemConfiguration"
+      - "SystemProperties"
+      - "TaskLogs"
+      - "ThreadDumps"
+      - "UpdateCenter"
+      - "UserCount"
+      - "ComponentImpl"
+      - "SlowRequestComponent"
+      - "HighLoadComponent"
+      - "DeadlockRequestComponent"
+      - "OperationsCenterSupportComponent"
+      - "PipelineTimings"
+      - "PipelineThreadDump"
+    enabled: true
+    period: 1
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+security:
+  anonymizeSupportBundle:
+    enabled: false
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: true
+  sSHD:
+    port: -1
+unclassified:
+  buildDiscarders:
+    configuredBuildDiscarders:
+      - "jobBuildDiscarder"
+  cloudBeesSCMReporting:
+    enabled: true
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+      - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
+  experimentalPlugins:
+    enabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://cm1.bvk.acaternberg.flow-training.beescloud.com:8080/github-webhook/"
+  gitSCM:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  hAGlobalConfiguration:
+    bindPort: 0
+    diagnosticPort: 0
+    portRange: 0
+    timeout: 30
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "acaternberg@cloudbees.com"
+    url: "http://cm1.bvk-prod.acaternberg.flow-training.beescloud.com:8080/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  mavenModuleSet:
+    localRepository: "default"
+  operationsCenterRootAction:
+    connectionDetails: |-
+      ----- BEGIN CONNECTION DETAILS -----
+      H4sIAAAAAAAAAA2OURLCIAxE78K3UJW2g72GJ0hCqLUITpraD8e7y37u23mzXzMLFDWTgQvyFYfR
+      QvK97UMYbYgp2psfEDxSgpHMySyxbc9WeVOqRaXmzNL6XXIDD9X31HX0rOTwszogUJaCLLNLuR5W
+      BZaylNkh80a57tFRfU2hpWuWg/FeaeV2SGXn3x+lRvyBnwAAAA==
+      ----- END CONNECTION DETAILS -----
+  pollSCM:
+    pollingThreadCount: 10
+  usageStatisticsCloudBees:
+    disabledJenkinsUsageStatistics: true
+    usageStatisticsCollected: true
+tool:
+  cloudbeesPluginUsageAnalyzer:
+    enabled: true
+  git:
+    installations:
+      - home: "git"
+        name: "git"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
