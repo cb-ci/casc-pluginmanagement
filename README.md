@@ -19,8 +19,12 @@ First add your wanted plugin id to the plugins.yaml
 Here for example the kubernetes-credentials-provider plugin
 You can get your specifc pluginids here https://docs.cloudbees.com/plugins/ci
 ```
-
 echo "- id: kubernetes-credentials-provider" >> casc-sample-bundle/plugins.yaml
+```
+
+Or one with dependencies:
+```
+echo "- id: bitbucket-kubernetes-credentials" >> casc-sample-bundle/plugins.yaml
 ```
 
 Then call the run script wich calculates dependencies and tweaks the plugin-catalog.yaml if required
