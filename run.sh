@@ -34,10 +34,6 @@ fi
 CI_VERSION=""
 BUNDLE_DIR=""
 
-#ARTIFACTORY_REPO_URL="https://\${ARTIFACTORY_USER}:\${ARTIFACTORY_PW}@acaternberg.jfrog.io/artifactory/cloudbees-plugins-remote"
-ARTIFACTORY_REPO_URL="https://acaternberg.jfrog.io/artifactory/cloudbees-plugins-remote"
-
-
 OPTIND=1
 # Resetting OPTIND is necessary if getopts was used previously in the script.
 # It is a good idea to make OPTIND local if you process options in a function.
@@ -186,10 +182,6 @@ cat $CACHE_DIR/tmp_plugins.yaml >  $PLUGINS_PATH
 echo "######################"
 echo "Generated plugins with dependencies calculated:"
 cat $PLUGINS_PATH
-
-echo "######################"
-echo "Generated plugin-catalog with link to $ARTIFACTORY_REPO_URL"
-cat  $PLUGIN_CATALOG_PATH
 
 echo "######################"
 #echo "Increasing version number in $BUNDLE_YAML_PATH"
