@@ -25,7 +25,9 @@ echo "- id: kubernetes-credentials-provider" >> casc-sample-bundle/plugins.yaml
 Then call the run script wich calculates dependencies and tweaks the plugin-catalog.yaml if required
 Plugin dependencies will calculated automaticly
 ```
+#Examole for version 2.319.3.4 
 ./run.sh -v  2.319.3.4 -d casc-sample-bundle
+#Examole for version 2.361.2.1 
 ./run.sh -v  2.361.2.1 -d casc-sample-bundle
 ```
 
