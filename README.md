@@ -32,10 +32,14 @@ Plugin dependencies will calculated automaticly
 ./run.sh -v  2.361.2.1 -d casc-sample-bundle
 ```
 
-Result: make a git diff to see what haven been c haged in the casc-sample-bundle/plugin*.yaml files 
+Result: make a git diff to see what haven been changed in the casc-sample-bundle/plugin*.yaml files 
 
 * `plugin.yaml` contains all plugin id`s that should be installed
 * `plugin-catalog.yaml` dependencies and tier3 plugins will be calculated  
+
+
+
+The `convert-plc-to-custom-plugin-repo-url.sh` is in progress and converts an plugin-catalog.yaml to airgapped Plugin URL
 
 
 
