@@ -115,12 +115,12 @@ if [[ -f $PIMT_JAR_CACHE_DIR/jenkins-plugin-manager.jar ]]; then
 else
   echo "$PIMT_JAR_CACHE_DIR/jenkins-plugin-manager.jar NOT exist local, try to download it from remote...." >&2
   mkdir -p $PIMT_JAR_CACHE_DIR
-  JAR_URL=$(curl -sL \
-    -H "Accept: application/vnd.github.v3+json" \
-    https://api.github.com/repos/jenkinsci/plugin-installation-manager-tool/releases/latest \
-    | yq e '.assets[0].browser_download_url' -)
-  echo "Download pluginmanagment tool from $JAR_URL"
-  curl -sL $JAR_URL > $PIMT_JAR_CACHE_DIR/jenkins-plugin-manager.jar
+  #JAR_URL=$(curl -sL \
+  #  -H "Accept: application/vnd.github.v3+json" \
+  #  https://api.github.com/repos/jenkinsci/plugin-installation-manager-tool/releases/latest \
+  #  | yq e '.assets[0].browser_download_url' -)
+  #echo "Download pluginmanagment tool from $JAR_URL"
+  curl -sL https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/2.12.5/jenkins-plugin-manager-2.12.5.jar  -o  $PIMT_JAR_CACHE_DIR/jenkins-plugin-manager.jar
 fi
 
 echo "######################"
@@ -159,6 +159,9 @@ configurations:
 #  | awk  -v URL=$ARTIFACTORY_REPO_URL '{print "    "$1 ":\n""      url: "URL"/"$1"/"$2"/"$1".hpi"}' >>  $PLUGIN_CATALOG_PATH
 
 #caalculate just the version for plugins in plugin-catalog
+
+#  | sed -n '/^Plugins\ that\ will\ be\ downloaded\:$/,/^Resulting\ plugin\ list\:$/p' \
+
 cat $DOWNLOAD_LOG \
   | sed -n '/^Plugins\ that\ will\ be\ downloaded\:$/,/^Resulting\ plugin\ list\:$/p' \
   | sed '1d' | sed '$d' | sed '$d' \
