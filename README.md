@@ -1,8 +1,11 @@
-This is an aproach on how to calculate Plugin dependecies for CloudBees CasC in an autmated way
-See https://docs.cloudbees.com/docs/cloudbees-ci/latest/casc-controller/advanced#_calculating_plugin_dependencies 
+This is an aproach on how to calculate Plugin dependecies for CloudBees Controller CasC in an autmated way
+See https://docs.cloudbees.com/docs/cloudbees-ci/latest/casc-controller/advanced#_calculating_plugin_dependencies
+* This is just an aproach/POC , an CloudBees RFE is allready created to get an offical implementation
+* For CloudBees Operations center the run.sh script needs to be adjusted (TODO) 
 
-It is inspired by https://github.com/kyounger/casc-plugin-dependency-calculation
-and uses the Jenkins OSS  https://github.com/jenkinsci/plugin-installation-manager-tool 
+It is inspired by 
+  * https://github.com/kyounger/casc-plugin-dependency-calculation
+  * and uses the Jenkins OSS https://github.com/jenkinsci/plugin-installation-manager-tool 
 
 You can just add the wanted sets of wanted plugin ids to the plugin.yaml and run the `run.sh` script.
 The outcome is an update `plugin.yaml` and `plugin-catalog.yaml` file including all plugin dependencies.
