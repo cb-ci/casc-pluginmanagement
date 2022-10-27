@@ -1,7 +1,8 @@
 This is an approach on how to calculating Plugin dependencies for CloudBees Controller CasC in an automated way
 See https://docs.cloudbees.com/docs/cloudbees-ci/latest/casc-controller/advanced#_calculating_plugin_dependencies
-* This is just an approach/POC , an CloudBees RFE is already created to get an official implementation
+* This is just an approach/POC 
 * For CloudBees Operations center the run.sh script needs to be adjusted (TODO)
+* The pluginmanagment tool is pinned in the `runs.sh` script to version 2.12.5
 
 It is inspired by
 * https://github.com/kyounger/casc-plugin-dependency-calculation
