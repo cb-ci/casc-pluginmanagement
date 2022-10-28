@@ -1,12 +1,3 @@
-credentials:
-  system:
-    domainCredentials:
-      - credentials:
-          - string:
-              description: "githubaccesstoken"
-              id: "githubaccesstoken"
-              scope: GLOBAL
-              secret: "{AQAAABAAAABwTEkcLRrqSH5A6haFmhvb9Zt087ndbT7u1HbyKDCfV110KNyXRulJ7Dc6JzymyQzbUqRcYymmuzP+6CtP914r5ziCK+o+H4D+82Ibf8dEV8tgwrsdscH4XERyjHUSVW1N6WqBfEdrcORQQzOv1ul7ynqmCnRDRA0xdkhVKo76nmg=}"
 jenkins:
   agentProtocols:
     - "Diagnostic-Ping"
