@@ -3,7 +3,6 @@
 PLUGIN_CATALOG=${1:-convert-plugin-catalog-testfile.yaml}
 CACHE_BASE_DIR=$(pwd)
 PLUGIN_CATALOG_UPDATE_FILE=$CACHE_BASE_DIR/plugin-catalog_update.yaml
-#ARTIFACTORY_REPO_URL="https://test:Test1234@acaternberg.jfrog.io/artifactory/cloudbees-plugins-remote"
 ARTIFACTORY_REPO_URL="https://acaternberg.jfrog.io/artifactory/cloudbees-plugins-remote"
 
 # echo "type: plugin-catalog
